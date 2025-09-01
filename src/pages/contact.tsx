@@ -9,7 +9,7 @@ export default function Contact() {
 				description="Contact Pilgrim’s Quill Studio to inquire about nationwide wedding calligraphy, custom lettering, or local in-person calligraphy classes."
 				ogDescription="Reach out to Pilgrim’s Quill Studio for wedding calligraphy, custom commissions nationwide, or local in-person lettering classes. Christy is ready to craft your elegant design."
 			/>
-			<h1 className="title">Contact Me</h1>
+			<h1 className="title">Contact Us</h1>
 
 			<div className={styles.blurbContainer}>
 				<p

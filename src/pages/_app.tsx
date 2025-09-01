@@ -2,6 +2,7 @@ import React, { useEffect, useState, useRef } from "react";
 import Header from "../components/header/header";
 import Footer from "../components/footer/footer";
 import "../styles/globals.css";
+import "../components/stitches/nav-1.css";
 import type { AppProps } from "next/app";
 import Head from "next/head";
 import { CartProvider } from "@/lib/cart-context";
@@ -11,6 +12,11 @@ function MyApp({ Component, pageProps }: AppProps) {
 	const [isScrolled, setIsScrolled] = useState(false);
 	const [isMobile, setIsMobile] = useState(false);
 	const [isSlideoutOpen, setIsSlideOutOpen] = useState(true);
+	const [mounted, setMounted] = useState(false);
+
+	useEffect(() => {
+		setMounted(true);
+	}, []);
 
 	useEffect(() => {
 		const updateSize = () => {
@@ -44,9 +50,10 @@ function MyApp({ Component, pageProps }: AppProps) {
 					<div className="header-container">
 						<Header />
 					</div>
+					<div className="spacer" style={{ height: "8rem" }} />
 					<main className="main-content">
 						<Component {...pageProps} />
-						{!isMobile && (
+						{mounted && !isMobile && (
 							<SlideOutButton
 								isOpen={isSlideoutOpen && isScrolled}
 								onClick={() => {
@@ -126,6 +133,15 @@ contractor to make my dreams come true on this property.`,
 			reviewer: "Paul H",
 		},
 	];
+
+	const [mounted, setMounted] = useState(false);
+
+	useEffect(() => {
+		setMounted(true);
+	}, []);
+
+	if (!mounted) return null;
+
 	return (
 		<div
 			ref={containerRef}
@@ -135,7 +151,8 @@ contractor to make my dreams come true on this property.`,
 				<button className="closeButton" onClick={onClick}>
 					{`X`}
 				</button>
-				<Slideshow testimonials={testimonials} containerRef={containerRef} />
+				(mounted &&
+				<Slideshow testimonials={testimonials} containerRef={containerRef} />)
 			</div>
 		</div>
 	);

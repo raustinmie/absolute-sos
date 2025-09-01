@@ -14,6 +14,8 @@
 	--width-logo-section: 350px;
 	--font-body: "Jost", serif;
 	--font-headings: "Jost", serif;
+	--header-size: clamp(1.5rem, 2.5vw, 2.25rem);
+
 	--text-size: clamp(1rem, 2vw, 1.5rem);
 	--corner-radius: 8px;
 	--drop-shadow: 4px 4px 4px #000000aa;
