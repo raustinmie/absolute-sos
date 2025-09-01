@@ -7,8 +7,8 @@ export default function About() {
 	return (
 		<div className={styles.aboutPage}>
 			<AboutSeo
-				description="Meet Christy, the artist behind Pilgrim’s Quill Studio. She specializes in wedding calligraphy and custom lettering nationwide, plus local in-person classes."
-				ogDescription="Christy, founder of Pilgrim’s Quill Studio, brings elegance and artistry to wedding calligraphy and custom lettering across the U.S., with local in-person classes."
+				description="Learn about Absolute SOS, serving Skagit & San Juan Counties with reliable septic installation, inspections, maintenance, sewer hookups, and excavation services."
+				ogDescription="Absolute SOS provides trusted septic services in Skagit & San Juan Counties. Learn about our commitment to quality installation, maintenance, and excavation solutions."
 			/>
 			<h1 className={styles.aboutHeader}>About Us</h1>
 			<div className={styles.aboutHeroImageContainer}>

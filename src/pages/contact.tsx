@@ -6,8 +6,8 @@ export default function Contact() {
 	return (
 		<div className={styles.contactContainer}>
 			<ContactSeo
-				description="Contact Pilgrim’s Quill Studio to inquire about nationwide wedding calligraphy, custom lettering, or local in-person calligraphy classes."
-				ogDescription="Reach out to Pilgrim’s Quill Studio for wedding calligraphy, custom commissions nationwide, or local in-person lettering classes. Christy is ready to craft your elegant design."
+				description="Contact Absolute SOS for expert septic services in Skagit & San Juan Counties. Call us or use our contact form to schedule installation, maintenance, or inspection."
+				ogDescription="Have questions or need service? Contact Absolute SOS today for septic installation, maintenance, inspections, sewer hookups, and excavation in Skagit & San Juan Counties."
 			/>
 			<h1 className="title">Contact Us</h1>
 

@@ -7,6 +7,10 @@ import {
 	primaryEmail,
 } from "@/constants";
 
+export interface AreaServed {
+	areaServedType: "Place" | "AdministrativeArea" | "GeoShape" | "Country";
+	areaServed: string;
+}
 export interface Service {
 	serviceName: string;
 	serviceType?: string;
@@ -19,8 +23,7 @@ export interface Service {
 		| "ProfessionalService"
 		| "HomeAndConstructionBusiness";
 	providerName?: string;
-	areaServedType?: "Place" | "AdministrativeArea" | "GeoShape" | "Country";
-	areaServed: string;
+	areasServed: AreaServed[];
 }
 
 interface ServicesSeoProps {
@@ -64,10 +67,12 @@ export default function ServicesSeo({
 			telephone: primaryPhone,
 			email: primaryEmail,
 		},
-		areaServed: {
-			"@type": service.areaServedType || "Place",
-			name: service.areaServed,
-		},
+		areaServed: [
+			{
+				"@type": service.areaServedType || "Place",
+				name: service.areaServed,
+			},
+		],
 	}));
 	return (
 		<GenericSeo

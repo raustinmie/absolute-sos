@@ -7,39 +7,80 @@ import ServicesSeo, { Service } from "@/components/seo/services-seo";
 export default function Services() {
 	const services: Service[] = [
 		{
-			serviceName: "Wedding Calligraphy",
-			serviceType: "Wedding Calligraphy",
+			serviceName: "Septic System Installation",
+			serviceType: "Septic System Installation",
 			serviceDescription:
-				"Elegant calligraphy for invitations, envelope addressing, seating charts, and day-of pieces. Available nationwide.",
-			providerType: "Organization",
-			areaServedType: "Country",
-			areaServed: "United States",
-		},
-		{
-			serviceName: "Custom Lettering & Commissions",
-			serviceType: "Custom Lettering",
-			serviceDescription:
-				"Handcrafted calligraphy and custom lettering pieces for weddings, events, and personal projects. Available nationwide.",
-			providerType: "Organization",
-			areaServedType: "Country",
-			areaServed: "United States",
-		},
-		{
-			serviceName: "Calligraphy Classes",
-			serviceType: "Calligraphy Classes",
-			serviceDescription:
-				"In-person calligraphy and lettering classes for all skill levels in the Pacific Northwest.",
+				"Professional septic system installation for residential and commercial properties in Skagit and San Juan Counties.",
 			providerType: "LocalBusiness",
-			areaServedType: "Place",
-			areaServed: "Whatcom County, WA",
+			areasServed: [
+				{
+					areaServedType: "Place",
+					areaServed: "Skagit County, WA",
+				},
+				{
+					areaServedType: "Place",
+					areaServed: "San Juan County, WA",
+				},
+			],
+		},
+		{
+			serviceName: "Septic System Maintenance",
+			serviceType: "Septic System Maintenance",
+			serviceDescription:
+				"Routine septic system maintenance to ensure efficiency and prevent costly issues in Skagit and San Juan Counties.",
+			providerType: "LocalBusiness",
+			areasServed: [
+				{
+					areaServedType: "Place",
+					areaServed: "Skagit County, WA",
+				},
+				{
+					areaServedType: "Place",
+					areaServed: "San Juan County, WA",
+				},
+			],
+		},
+		{
+			serviceName: "Septic System Inspection",
+			serviceType: "Septic System Inspection",
+			serviceDescription:
+				"Thorough septic inspections for home sales, maintenance planning, and compliance in Skagit and San Juan Counties.",
+			providerType: "LocalBusiness",
+			areasServed: [
+				{
+					areaServedType: "Place",
+					areaServed: "Skagit County, WA",
+				},
+				{
+					areaServedType: "Place",
+					areaServed: "San Juan County, WA",
+				},
+			],
+		},
+		{
+			serviceName: "Excavator Services",
+			serviceType: "Excavator Services",
+			serviceDescription:
+				"Professional excavator services for foundations, driveways, and site preparation in Skagit and San Juan Counties.",
+			providerType: "LocalBusiness",
+			areasServed: [
+				{
+					areaServedType: "Place",
+					areaServed: "Skagit County, WA",
+				},
+				{
+					areaServedType: "Place",
+					areaServed: "San Juan County, WA",
+				},
+			],
 		},
 	];
 
 	return (
 		<div className={styles.servicesContainer}>
 			<ServicesSeo
-				description="Explore Pilgrim’s Quill’s services: wedding calligraphy, envelope addressing, seating charts, place-settings, custom commissions nationwide, and local lettering classes."
-				ogDescription="From invitations to seating charts, place-settings to custom commissions, Pilgrim’s Quill Studio offers elegant wedding calligraphy nationwide and in-person lettering classes locally."
+				description="Explore septic services from Absolute SOS: installation, inspections, maintenance, sewer hookups, and excavation in Skagit & San Juan Counties."
+				ogDescription="From septic installation to sewer hookups and excavation, Absolute SOS provides reliable services in Skagit & San Juan Counties. See our full list of services."
 				services={services}
 			/>
 			<h1

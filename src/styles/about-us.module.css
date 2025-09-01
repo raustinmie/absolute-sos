@@ -17,7 +17,7 @@
 
 .aboutHeroImageContainer {
 	width: 100%;
-	aspect-ratio: 1453/817;
+	aspect-ratio: 1453/825;
 }
 .aboutIntroText {
 	font-size: var(--text-size);
@@ -60,35 +60,6 @@
 	width: 35%;
 	min-height: 300px;
 	aspect-ratio: 480/593;
-}
-
-.pilgrimsQuillSection {
-	width: 100%;
-	padding: 2rem;
-	margin-top: 2rem;
-	background-color: var(--color-background);
-	display: flex;
-	flex-direction: column;
-	box-sizing: border-box;
-	align-items: center;
-}
-
-.pilgrimsQuillTitle {
-	font-size: 2rem;
-	margin-top: 0;
-	font-style: italic;
-	text-align: center;
-}
-
-.pilgrimsQuillText {
-	font-size: 1.5rem;
-	line-height: 1.6;
-	color: var(--color-text-dark);
-	white-space: pre-line;
-	text-align: center;
-	max-width: 1200px;
-	padding: 1rem;
-	margin: 0;
 }
 
 .ctaSection {
@@ -153,16 +124,6 @@
 	}
 	.rightText {
 		margin-top: 0;
-	}
-	.pilgrimsQuillSection {
-		margin-bottom: 2rem;
-	}
-	.pilgrimsQuillTitle {
-		font-size: 1.5rem;
-	}
-	.pilgrimsQuillText {
-		font-size: 1.25rem;
-		padding: 0;
 	}
 	.ctaSection {
 		margin-top: 2rem;

@@ -9,8 +9,8 @@ export default function Home() {
 	return (
 		<div className={styles.homeContainer}>
 			<HomeSeo
-				description="Pilgrim’s Quill Studio creates elegant wedding calligraphy and custom lettering nationwide, plus in-person calligraphy classes in the Pacific Northwest."
-				ogDescription="Elevate your wedding with Christy’s fine calligraphy. Pilgrim’s Quill Studio offers custom lettering and wedding services nationwide, plus local in-person classes."
+				description="Absolute SOS provides septic installation, maintenance, inspections, sewer hookups, and excavation in Skagit & San Juan Counties. Contact us today!"
+				ogDescription="Expert septic services in Skagit & San Juan Counties. From installation and inspections to sewer hookups and excavation, Absolute SOS delivers reliable solutions. Get in touch today!"
 			/>
 			<div className={styles.heroSection}>
 				<h2

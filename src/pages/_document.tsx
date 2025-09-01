@@ -28,7 +28,7 @@ class MyDocument extends Document {
 					{/* Icons & Manifest */}
 					<link rel="icon" href="/favicon.ico" />
 					<link rel="apple-touch-icon" href={appleTouchIconPath} />
-					<link rel="canonical" href="https://pilgrimsquill.com/" />
+					<link rel="canonical" href="https://absolutesos.com/" />
 					<link rel="manifest" href="/manifest.json" />
 
 					{/* Meta Tags */}
