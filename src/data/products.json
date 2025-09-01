@@ -1,0 +1,55 @@
+{
+    "products": [
+        {
+        "name": "Sweet Peas",
+        "products": [
+            {
+                "id": 1,
+                "priceId": "price_1RZQY2RqLO3GEq05t0jTlzDS",
+                "name": "Blue Sweet Pea",
+                "price": 19.99,
+                "mode": "payment",
+                "description": "A beautiful blue sweet pea flower, perfect for any garden."
+            },
+            {
+                "id": 2,
+                "priceId": "price_1RZQY2RqLO3GEq05t0jTlzDS",
+                "name": "Pink Sweet Pea",
+                "price": 19.99,
+                "mode": "payment",
+                "description": "A lovely pink sweet pea flower, adding charm to your garden."
+            },
+            {
+                "id": 3,
+                "priceId": "price_1RZQY2RqLO3GEq05t0jTlzDS",
+                "name": "White Sweet Pea",
+                "price": 19.99,
+                "mode": "payment",
+                "description": "A classic white sweet pea flower, elegant and timeless."
+            }
+        ]},
+        {
+            "name": "Bouquets",
+            "products": [
+                {
+                    "id": 1,
+                    "priceId": "price_1RZQYqRqLO3GEq05lov6nCxR",
+                    "name": "Monthly Bouquet Subscription",
+                    "price": 49.99,
+                    "mode": "subscription",
+                    "description": "Receive a fresh bouquet of seasonal flowers every month.",
+                    "interval": "month"
+                },
+                {
+                    "id": 2,
+                    "priceId": "price_1RZQYqRqLO3GEq05lov6nCxR",
+                    "name": "Quarterly Bouquet Subscription",
+                    "price": 139.99,
+                    "mode": "subscription",
+                    "description": "Enjoy a beautiful bouquet every three months.",
+                    "interval": "quarter"
+                }
+            ]
+        }
+    ]
+}

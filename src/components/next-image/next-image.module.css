@@ -1,0 +1,9 @@
+.nextImage {
+	object-fit: contain;
+}
+
+.imageWrapper {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}

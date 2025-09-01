@@ -1,0 +1,59 @@
+.carouselWrapper {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	margin: 0 auto;
+	overflow: visible;
+}
+
+/* Arrows */
+.arrow {
+	position: fixed;
+	bottom: 4px;
+	font-size: 2rem;
+	background: rgba(0, 0, 0, 0.4);
+	border: none;
+	color: white;
+	padding: 0.5rem 1rem;
+	cursor: pointer;
+	z-index: 10;
+	border-radius: 4px;
+	transition: background 0.2s;
+}
+
+.arrow:hover {
+	background: rgba(0, 0, 0, 0.7);
+}
+
+.leftArrow {
+	right: calc(25% - 3rem);
+}
+
+.rightArrow {
+	right: 10px;
+}
+
+.review {
+	position: relative;
+	text-align: center;
+	padding: 1rem;
+	font-size: var(--text-size);
+	color: var(--color-text-light);
+	box-sizing: border-box;
+	height: auto;
+	padding-bottom: 2rem;
+}
+
+.stars {
+	position: fixed;
+	bottom: calc(50vh - 3.65rem);
+	left: 75%;
+	border-radius: 8px 8px 0 0;
+	background-color: #999;
+	width: calc(25% - 1px);
+	font-size: 1.5rem;
+	border-bottom: 1px solid black;
+}
+.reviewText {
+	padding-top: 1rem;
+}
