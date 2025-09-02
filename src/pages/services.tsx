@@ -155,7 +155,9 @@ export default function Services() {
 			</div>
 			<div className={`${styles.serviceSection} ${styles.inspectionSection}`}>
 				<div className={`${styles.serviceContent} ${styles.inspectionContent}`}>
-					<div className={styles.infoAndCtaColumn}>
+					<div
+						className={`${styles.infoAndCtaColumn} ${styles.inspectionInfoAndCta}`}
+					>
 						<div className={styles.headers}>
 							<h2
 								className={styles.serviceHeader}
@@ -176,7 +178,9 @@ export default function Services() {
 				</div>
 			</div>
 			<div className={`${styles.serviceSection} ${styles.maintenanceSection}`}>
-				<div className={`${styles.serviceContent}`}>
+				<div
+					className={`${styles.serviceContent} ${styles.maintenanceContent}`}
+				>
 					<div className={styles.infoAndCtaColumn}>
 						<div className={styles.headers}>
 							<h2

@@ -1,10 +1,16 @@
 import React, { useEffect, useState } from "react";
 import { usePathname } from "next/navigation"; // Next.js 13+
+import { useWindowScroll } from "react-use";
 
 export function Nav1() {
 	const [menuOpen, setMenuOpen] = useState(false);
 	const pathname = usePathname(); // current path
+	const { y } = useWindowScroll();
+	const [isScrolled, setIsScrolled] = useState(false);
 
+	useEffect(() => {
+		setIsScrolled(y > 32);
+	}, [y]);
 	// Toggle the main menu
 	const toggleMenu = () => {
 		setMenuOpen((prev) => !prev);
@@ -38,7 +44,10 @@ export function Nav1() {
 	];
 
 	return (
-		<header id="cs-navigation" className={menuOpen ? "cs-active" : ""}>
+		<header
+			id="cs-navigation"
+			className={`${menuOpen ? "cs-active" : ""} ${isScrolled ? "scroll" : ""}`}
+		>
 			<div className="cs-container">
 				<a href="/" className="cs-logo" aria-label="back to home">
 					Absolute SOS

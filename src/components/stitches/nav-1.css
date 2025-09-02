@@ -8,19 +8,21 @@
 		overflow: hidden;
 	}
 	#cs-navigation {
-		width: 91%;
+		width: 100%;
 		max-width: 80rem;
-		/* prevents padding from affecting height and width */
 		box-sizing: border-box;
-		/* 12px - 24px */
 		padding: clamp(0.75rem, 2vw, 1.5rem);
-		border-radius: 1rem;
 		position: fixed;
-		top: 1.25rem;
-		left: 50%;
+		border-radius: 1rem;
+		align-self: center;
+		justify-self: center;
 		z-index: 10000;
-		transform: translateX(-50%);
 		transition: top 0.3s, border-radius 0.3s, width 0.3s, max-width 0.3s;
+	}
+
+	#cs-navigation.scroll {
+		width: 100%;
+		border-radius: 0;
 	}
 	#cs-navigation:before {
 		/* background color */
@@ -29,7 +31,6 @@
 		height: 100%;
 		background: var(--color-header);
 		opacity: 1;
-		border-radius: 1rem;
 		display: block;
 		position: absolute;
 		top: 0;
@@ -362,6 +363,9 @@
 }
 /* Desktop - 1024px */
 @media only screen and (min-width: 64rem) {
+	#cs-navigation {
+		width: 91%;
+	}
 	#cs-navigation .cs-dropdown {
 		position: relative;
 	}
@@ -491,18 +495,14 @@
 		border-radius: 1rem;
 		display: flex;
 		align-items: center;
-		position: fixed;
-		top: 2rem;
-		left: 50%;
+		justify-self: center;
 		z-index: 10000;
-		transform: translateX(-50%);
 		transition: top 0.3s, border-radius 0.3s, width 0.3s, max-width 0.3s;
 	}
 	#cs-navigation.scroll {
 		width: 100%;
 		max-width: 100%;
 		border-radius: 0;
-		top: 0;
 	}
 	#cs-navigation .cs-container {
 		width: 100%;

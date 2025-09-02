@@ -15,7 +15,6 @@
 	--font-body: "Jost", serif;
 	--font-headings: "Jost", serif;
 	--header-size: clamp(1.5rem, 2.5vw, 2.25rem);
-
 	--text-size: clamp(1rem, 2vw, 1.5rem);
 	--corner-radius: 8px;
 	--drop-shadow: 4px 4px 4px #000000aa;
@@ -45,7 +44,8 @@ body {
 	width: 100%;
 	box-sizing: border-box;
 	position: sticky;
-	top: -185px;
+	margin-top: 2rem;
+	top: 0;
 	left: 0;
 	font-family: var(--font-body);
 	z-index: 1000;
@@ -186,9 +186,11 @@ body {
 	width: 25%;
 	transition: all 0.5s ease;
 	opacity: 1;
+	display: block;
 }
 .slideoutContainer {
 	width: 25%;
+	display: none;
 	position: fixed;
 	opacity: 0;
 	right: 0;

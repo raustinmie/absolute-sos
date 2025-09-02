@@ -1,5 +1,4 @@
 import React, { useEffect, useState, useRef } from "react";
-import Header from "../components/header/header";
 import Footer from "../components/footer/footer";
 import "../styles/globals.css";
 import "../components/stitches/nav-1.css";
@@ -8,6 +7,7 @@ import Head from "next/head";
 import { CartProvider } from "@/lib/cart-context";
 import { companyName, siteDescription } from "@/constants";
 import Slideshow from "@/components/slideshow/slideshow";
+import { Nav1 } from "@/components/stitches/nav-1";
 function MyApp({ Component, pageProps }: AppProps) {
 	const [isScrolled, setIsScrolled] = useState(false);
 	const [isMobile, setIsMobile] = useState(false);
@@ -48,9 +48,8 @@ function MyApp({ Component, pageProps }: AppProps) {
 			<div className="app-container">
 				<CartProvider>
 					<div className="header-container">
-						<Header />
+						<Nav1 />
 					</div>
-					<div className="spacer" style={{ height: "8rem" }} />
 					<main className="main-content">
 						<Component {...pageProps} />
 						{mounted && !isMobile && (

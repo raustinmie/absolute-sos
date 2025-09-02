@@ -123,6 +123,12 @@
 .inspectionSection {
 	background-color: var(--color-background);
 }
+.inspectionContent {
+	min-height: unset;
+}
+.maintenanceContent {
+	min-height: unset;
+}
 .excavationSection {
 	background-color: var(--color-primary);
 }
@@ -176,5 +182,7 @@
 
 	.maintenanceCtaButtonLink {
 		width: 90%;
+		display: flex;
+		justify-content: center;
 	}
 }

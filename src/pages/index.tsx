@@ -106,9 +106,7 @@ export default function Home() {
 							</button>
 						</Link>
 					</div>
-					<div
-						className={`${styles.imageContainer} ${styles.educationImageContainer}`}
-					>
+					<div className={`${styles.educationImageContainer}`}>
 						<NextImage
 							src="/images/home-education.png"
 							alt="Septic tanks being installed"

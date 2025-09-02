@@ -9,15 +9,16 @@ export default function Contact() {
 				description="Contact Absolute SOS for expert septic services in Skagit & San Juan Counties. Call us or use our contact form to schedule installation, maintenance, or inspection."
 				ogDescription="Have questions or need service? Contact Absolute SOS today for septic installation, maintenance, inspections, sewer hookups, and excavation in Skagit & San Juan Counties."
 			/>
-			<h1 className="title">Contact Us</h1>
-
-			<div className={styles.blurbContainer}>
-				<p
-					className={styles.contactBlurb}
-				>{`Have a septic issue or planning a new project? We offer free estimates, honest advice, and fast, professional service—whether you're on the mainland or one of the islands. Reach out today and let’s get it scheduled!`}</p>
-			</div>
-			<div className={styles.contactFormContainer}>
-				<ContactForm />
+			<h1 className={`title ${styles.contactTitle} `}>Contact Us</h1>
+			<div className={styles.contactHero}>
+				<div className={styles.blurbContainer}>
+					<p
+						className={styles.contactBlurb}
+					>{`Have a septic issue or planning a new project? We offer free estimates, honest advice, and fast, professional service—whether you're on the mainland or one of the islands. Reach out today and let’s get it scheduled!`}</p>
+				</div>
+				<div className={styles.contactFormContainer}>
+					<ContactForm />
+				</div>
 			</div>
 			<div className="divider" />
 			<div className={styles.otherWaysToFindMeSection}>

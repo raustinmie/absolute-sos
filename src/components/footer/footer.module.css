@@ -166,6 +166,9 @@
 .mobile {
 	display: none;
 }
+.ctaButtonLink {
+	padding-bottom: 1rem;
+}
 
 @media (max-width: 768px) {
 	.footer {
