@@ -53,7 +53,7 @@ export default function ServicesSeo({
 		areaServed: {
 			"@type": "Place" | "AdministrativeArea" | "GeoShape" | "Country";
 			name: string;
-		};
+		}[];
 	}[] = services.map((service) => ({
 		"@type": "Service",
 		name: service.serviceName,
@@ -67,12 +67,10 @@ export default function ServicesSeo({
 			telephone: primaryPhone,
 			email: primaryEmail,
 		},
-		areaServed: [
-			{
-				"@type": service.areaServedType || "Place",
-				name: service.areaServed,
-			},
-		],
+		areaServed: service.areasServed.map((area) => ({
+			"@type": area.areaServedType || "Place",
+			name: area.areaServed,
+		})),
 	}));
 	return (
 		<GenericSeo
@@ -90,33 +88,3 @@ export default function ServicesSeo({
 		/>
 	);
 }
-
-// "provider": {
-//   "@type": "LocalBusiness",
-//   "name": "Spruce It Up Landscaping",
-//   "url": "https://spruceituplandscaping.com",
-//   "image": "https://spruceituplandscaping.com/images/logo.png",
-//   "telephone": "+1-360-555-1234",
-//   "address": {
-//     "@type": "PostalAddress",
-//     "streetAddress": "123 Main St",
-//     "addressLocality": "Bellingham",
-//     "addressRegion": "WA",
-//     "postalCode": "98225",
-//     "addressCountry": "US"
-//   }
-// }
-//   {
-//     "@type": "Service",
-//     "name": "Hardscaping",
-//     "serviceType": "Hardscaping",
-//     "description": "Design and installation of patios, walkways, and other hardscape features to enhance outdoor living spaces in Whatcom County, WA.",
-//     "provider": {
-//       "@type": "Organization",
-//       "name": "Spruce It Up Landscaping"
-//     },
-//     "areaServed": {
-//       "@type": "Place",
-//       "name": "Whatcom County, WA"
-//     }
-//   },
