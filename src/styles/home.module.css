@@ -205,6 +205,9 @@
 	.imageContainer {
 		width: 100%;
 	}
+	.heroHeader {
+		margin-top: 2rem;
+	}
 	.heroSection {
 		margin: 0;
 		width: 100%;
