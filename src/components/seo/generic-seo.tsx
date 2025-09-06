@@ -33,7 +33,7 @@ export default function GenericSeo({
 	title,
 	description,
 	ogDescription,
-	canonicalUrlPath,
+	canonicalUrlPath = "/",
 	ogType = "website",
 	twitterCard = "summary_large_image",
 	noIndex = false,

@@ -5,7 +5,7 @@ const siteDescription =
 	"Plumbing, Excavation, and Septic System installation and repair in Skagit County and San Juan County";
 export { siteDescription };
 
-const ogImagePath = "";
+const ogImagePath = "https://www.absolutesos.com/images/opengraphSOS.jpg";
 export { ogImagePath };
 
 const ogIconPath = "";
