@@ -30,26 +30,6 @@ class MyDocument extends Document {
 					<link rel="apple-touch-icon" href={appleTouchIconPath} />
 					<link rel="canonical" href="https://absolutesos.com/" />
 					<link rel="manifest" href="/manifest.json" />
-
-					{/* Meta Tags */}
-					<meta name="theme-color" content="#000000" />
-					<meta name="robots" content="index, follow" />
-					<meta name="description" content={siteDescription} />
-
-					{/* Open Graph */}
-					<meta property="og:title" content={companyName} />
-					<meta property="og:description" content={siteDescription} />
-					<meta property="og:image" content={ogImagePath} />
-					<meta property="og:url" content={canonicalUrl} />
-					<meta property="og:type" content="website" />
-					<meta property="og:image:type" content="image/png" />
-
-					{/* Twitter Meta */}
-					<meta name="twitter:card" content="summary_large_image" />
-					<meta name="twitter:title" content={companyName} />
-					<meta name="twitter:description" content={siteDescription} />
-					<meta name="twitter:image" content={ogImagePath} />
-
 					{/* Structured Data (JSON-LD) */}
 					<Script
 						id="structured-data"
