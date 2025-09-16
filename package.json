@@ -1,5 +1,5 @@
 {
-	"name": "absolute-sos",
+	"name": "four-seasons-heating-and-cooling",
 	"version": "0.1.0",
 	"private": true,
 	"scripts": {
@@ -12,6 +12,7 @@
 		"@emailjs/browser": "^4.4.1",
 		"@icons-pack/react-simple-icons": "^13.7.0",
 		"@radix-ui/react-accordion": "^1.2.11",
+		"emailjs-com": "^3.2.0",
 		"framer-motion": "^12.23.12",
 		"keen-slider": "^6.8.6",
 		"lucide-react": "^0.508.0",
