@@ -10,7 +10,11 @@
 	box-sizing: border-box;
 	margin: 0;
 }
-
+.website {
+	position: absolute;
+	left: -9999px;
+	top: -9999px;
+}
 .contactForm {
 	display: flex;
 	flex-direction: column;
@@ -72,7 +76,7 @@
 	animation: fadeInOut 3s ease forwards;
 }
 
-@media (max-width: 768) {
+@media (max-width: 768px) {
 	.formContainer {
 		padding: 1rem;
 	}
