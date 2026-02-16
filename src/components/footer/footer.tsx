@@ -32,7 +32,7 @@ export default function Footer() {
 				<div className={styles.desktopCopyright}>
 					<PrivacyPolicy />
 					<TermsOfService />
-					&copy; 2025{" "}
+					&copy; 2026{" "}
 					<a
 						href="https://www.harborviewwebdesign.com"
 						className={styles.harborviewLink}
@@ -113,7 +113,7 @@ export default function Footer() {
 				<PrivacyPolicy />
 				<TermsOfService />
 				<div className={styles.copyrightLine}>
-					&copy; 2025
+					&copy; 2026
 					<a
 						href="https://www.harborviewwebdesign.com"
 						className={styles.harborviewLink}
